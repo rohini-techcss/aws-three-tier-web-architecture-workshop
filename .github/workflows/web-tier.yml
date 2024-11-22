@@ -18,10 +18,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+          
       # Step 3: Install npm dependencies
       - name: Install dependencies
         run: npm install
-        working-directory: ./web-tier
+        working-directory: ./application-code/web-tier
+        
       # Step 4: Build the React application
       #- name: Build the application
       #  run: npm run build
