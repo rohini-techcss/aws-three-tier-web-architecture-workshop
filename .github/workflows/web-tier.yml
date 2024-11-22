@@ -35,7 +35,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-artifact
-          path: ./build
+          path: application-code/web-tier/build
+          if-no-files-found: error
       # Step 6: Set up Java 17
       - name: Set up Java
         uses: actions/setup-java@v3
