@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - ./web-tier
+      - /web-tier
 jobs:
   build:
     # Define a matrix strategy to run the job on multiple Node.js versions
